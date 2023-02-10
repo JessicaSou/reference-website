@@ -15,16 +15,22 @@
         <li><a href="#commit-messages">Commit messages</a></li>
         <li><a href="#html-elements">HTML Elements</a></li>
         <li><a href="#structuring-content">Structuring Content</a></li>
+        <li><a href="#linking-to-element-on-page">Linking elements on the same page</a></li>
+        <li><a href="#commenting">Commenting</a></li>
       </ul>
     </nav>
   </header>  
-  <!--
-        <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+
+  <!-- basic navgation structure
+    <nav>
+      <ul>
+        <li> <a href="">name</a> </li>
+        <li> <a href="">name</a> </li>
+        <li> <a href="">name</a> </li>
       </ul>
-  -->
+    </nav>
+-->
+
   <main>
     <section id="naming-coventions">
       <h2>Naming Conventions</h2>
@@ -193,10 +199,67 @@
                     </p>
                     <p><code> &lt;Aside> &lt;/Aside> </code></p>
       
-      
      </section>
                 
-                
+       
+  
+    <section id="linking-to-element-on-page">
+      
+      <h2>Linking elements on the same page</h2>
+
+        <h3>Absoulte URLs</h3>
+          <p>Absolute URLs offer a full address for a website or other resource on the Internet. This means referencing a whole link with a domain name. Below are examples of absolute URLs</p>
+            <blockquote>
+                  <pre>
+                    <code>
+                        &lt;a href="http://www.website.com">This link goes to another url&lt;/a>
+                        &lt;img src=“http://www.website.com/image/image.jpg” alt=“description” />
+                    </code>
+                  </pre>
+                  </blockquote>
+      
+        <h3>Relative paths</h3>
+            <p>Links to relative URL/paths means linking to file on the current page. This can be done a variety of ways. </p> 
+            <blockquote>
+                  <pre>
+                    <code>
+                        &lt;a href="about.html">Page in same folder as index.html&lt;/a>
+                        &lt;img src=“image/image.jpg” alt=“description of image” />
+                        &lt;link href=“.../css/style.css” rel=“stylesheet” />
+                    </code>
+                  </pre>
+                  </blockquote>
+
+        <h3>Elements on same page</h3>
+            <p>Linking to an element on the same page is a little different, you need to create an anchor for the link. The modern way of doing this is to give the appropriate element an <code>id="Content" </code>attribute. The older way of doing this was to use <code>&lt;a name="Content">&lt;/a>.</code></p>
+              <blockquote>
+                  <pre>
+                    <code>
+                        &lt;a href="#products">Products&lt;/a>
+                          &lt;section id=”products” />
+                            &lt;h2>Products &lt;h2/>
+                              &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                  sed do eiusmod tempor incididunt ut labore et dolore 
+                                  magna aliqua. &lt;/p>
+                            &lt;/section>
+                    </code>
+                  </pre>
+                  </blockquote>  
+
+        <h3>Parent child relationships</h3>
+          <p>When learning HTML, the parent-child relationships of the elements is critical to good structure & code understanding. A <strong>parent</strong> is an element that is directly above and connected to an element in the document tree. An element that is directly contained by another element is said to be the <strong>child</strong> of that element.</p>
+    </section>
+    
+    <section id="commenting">
+      
+      <h2>Commenting</h2>
+        <p>Comments are not displayed by the browser, but they can help document your HTML source code. The tag for a comment is :</p>
+        <code>
+        &lt;!-- Write you comment here -->
+          </code>
+          
+      </section>
+            
                 
   </main>
     
