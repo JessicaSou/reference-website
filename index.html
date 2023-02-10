@@ -14,10 +14,17 @@
         <li><a href="#naming-coventions">Naming Conventions</a></li>
         <li><a href="#commit-messages">Commit messages</a></li>
         <li><a href="#html-elements">HTML Elements</a></li>
+        <li><a href="#structuring-content">Structuring Content</a></li>
       </ul>
     </nav>
   </header>  
-  
+  <!--
+        <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+  -->
   <main>
     <section id="naming-coventions">
       <h2>Naming Conventions</h2>
@@ -41,26 +48,158 @@
           <li>Pretend every commit starts with the phrase: <strong>“This commit will…”</strong></li>
         </ul>
         
-    </section>
+     </section>
     
     <section id="html-elements">
       <h2>HTML Elements</h2>
       
-      <h3>Headings</h3>
-      <!-- explain headings -->
-        <blockquote> The heading tags are used to mark headings
-  according to their importance. The tag numbers for from h1-h6, 1 being the most important and 6 being the least. For HTML you can only have a max of 6 in a section. Below is a visual representation of h1-h6.
+          <h3>Headings</h3>
+          <!-- explain headings -->
+            <p> The heading tags are used to mark headings
+      according to their importance. The tag numbers for from h1-h6, 1 being the most important and 6 being the least. For HTML you can only have a max of 6 in a section. Below is a visual representation of h1-h6. </p>
+            <h1>First</h1>
+            <h2>Second</h2>
+            <h3>Thrid</h3>
+            <h4>Fourth</h4>
+            <h5>Fifth</h5>
+            <h6>Sixth</h6>
   
-        <h1>First</h1>
-        <h2>Second</h2>
-        <h3>Thrid</h3>
-        <h4>Fourth</h4>
-        <h5>Fifth</h5>
-        <h6>Sixth</h6>
-        </blockquote>
-    </section>
+  
+          <h3>Paragraphs</h3>
+            <p>Paragraphs or basic text blocks are denoted by the tag <code> &lt;p&gt;</code>. It is a
+      block-level element and always starts on a
+      new line. Before and after each paragraph,
+      browsers add margins automatically.
+            </p>
+  
+  
+          <h3>Lists</h3>
+            <p>There are 3 types of lists in HTML: </p>
+            <dl>
+              <dt>Unordered lists using the tag <code> &lt;ul&gt;</code>:</dt> <dd> These lists are by default put into bulltet form and and each element is listed using the li tag. For grouping a collection of items that do not have a numerical ordering, and their order in the list is meaningless</dd>
+              <dt>Ordered lists using the tag <code> &lt;ol&gt;</code>:</dt> <dd>The elements for this list are denoted using the li tag aswell. The order for this does matter and by default the first element of the list with have a 1 infront decending to whatever number of things you put into the list.</dd>
+              <dt>Description lists using the tag <code> &lt;dl&gt;</code>:</dt> <dd> This list is primarily seen in dictionaries as it is using a term (denoted by dt) and a description (dentoted by dd).</dd> <dd>You can only have 1 term per list element but multiple descriptions and they will be given their own like like so. </dd>
+            </dl>
+  
+          <h3>Attributes</h3>
+            <p>Attributes are special words used inside the opening tag to control the element's behaviour. The most common used one is attribute href; used for hyperlinks the value of which is the URL, or location, where the link is pointing to. The line of code should look like this:</p>
+              <blockquote>
+                <pre>
+                  <code>
+                      &lt;a href=“”> Link text &lt;/a>
+                  </code>
+                </pre>
+               </blockquote>
+  
+             <p>Common Global Attributes Allows us to target any HTML element within our CSS or JavaScript.</p>
+              <dl>
+                <dt> <code> &lt;p class=“”> </code> : </dt><dd> You can use a class multiple times throughout your HTML and attach it to different types of elements. </dd>
+                <dt> <code> &lt;p id=“”> </code> : </dt><dd> Only allowed to use one unique id once in each html page. </dd>
+  
+              </dl> 
+  
+  
+          <h3>Images</h3>
+            <p> When placing images on a webpage you need to have a valid link refrencing to where that image is located because they are not embedded into the website.
+            Images need two attributes to specify extra
+            details about the image: the location of the
+            image and the alternative content. This line is also containted in one set of brackets. The line of code should look like this:</p>
+  
+            <blockquote>
+              <pre>
+                <code>
+                    &lt;img src=“” alt=“” />
+                </code>
+              </pre>
+             </blockquote>
+  
+          <h3>Figure (img & figcaption) </h3> 
+      
+          <h3>Quotes</h3>
+  
+            <p>There are a couple of ways to do quotes in HTML, here are the tags and their explinations: </p>
+              <dl>
+                <dt> <code>&lt;q></code>:</dt> <dd> Used to mark up quotes embedded in other elements like a paragraph. <q>Example</q></dd>
+                <dt> <code>&lt;blockquote></code>:</dt> <dd>For large stand alone quotes. <blockquote> Example</blockquote></dd>
+                <dt> <code>&lt;cite></code>:</dt> <dd> Marking the source of the quote. <cite>Example</cite></dd> 
+              </dl>
+    
+      
+           <h3>Phrasing elements</h3>
+            <p>A phrase element is used to describe words or phrases within a block or structure element. Here are the tags and their explinations: </p>
+              <dl>
+                <dt> <code>&lt;em></code>:</dt> <dd> Used to mark up quotes embedded in other elements like a paragraph. <em>Example</em></dd>
+                <dt> <code>&lt;strong></code>:</dt> <dd>Lots of emphasis, strong importance or urgency <strong>Example</strong></dd>
+                <dt> <code>&lt;i></code>:</dt> <dd> Another language, technical term, title. Visual only italics. <i>Example</i></dd> 
+                <dt> <code>&lt;b></code>:</dt> <dd> A keyword <b>Example</b></dd> 
+                <dt> <code>&lt;small></code>:</dt> <dd> Used to set small font size. It decreases the font size by one size. <small>Example</small></dd>
+                </dl>
+  
+     </section>
+  
+      
+      
+    <section id="structuring-content">
+        <h2>Structuring Content</h2>
+  
+            <h3>Header</h3>
+              <p>The header is the introductory content usually at the top of the page and would include a logo or company name and main navigation. Headers are also within sections and articles to introduce the content for headings, subheadings, author, etc.. The tag is:
+  </p> 
+              <p><code> &lt;header> &lt;/header> </code></p>
+      
+      
+             <h3>Footer</h3>
+               <p>Many webpages end their pages with a
+                  footer at the bottom. This often includes
+                  lists of links, copyright information,
+                  extra information about the company,
+                  terms and services. The tag is:
+                </p>
+                <p><code> &lt;footer> &lt;/footer> </code></p>
+      
+        
+              <h3> Main </h3>
+                <p>The main element wraps around the main
+                  content of the page. It’s only used once
+                  per page and it tells the browser that
+                  this is where the main content is.
+                  </p>
+                  <p><code> &lt;main> &lt;/main> </code></p>
+      
+            
+               <h3> Section </h3>
+                <p>Section is used to wrap around related
+                    pieces of content. Usually each section
+                    has its own heading.
+  
+                  </p>
+                  <p><code> &lt;section> &lt;/section> </code></p>
+      
+      
+               <h3> Article </h3>
+                <p>The article element represents a self-contained composition in a web page, which is intended to be independently distributable or reusable. Examples include blog post, product card, interactive widget, etc... The tag is :
+                  </p>
+                  <p><code> &lt;article> &lt;/article> </code></p>
+      
+      
+               <h3> Nav </h3>
+                <p>The nav element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. The tag is :
+                  </p>
+                  <p><code> &lt;nav> &lt;/nav> </code></p>
+      
+      
+                <h3> Aside </h3>
+                  <p>The aside element represents a portion of a document whose content is only indirectly related to the document's main content. This content will frequently be presented as a sidebar on a website. The tag is :
+                    </p>
+                    <p><code> &lt;Aside> &lt;/Aside> </code></p>
+      
+      
+     </section>
+                
+                
+                
   </main>
-  
+    
   
 </body>
 </html>
