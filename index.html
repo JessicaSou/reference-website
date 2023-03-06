@@ -32,6 +32,8 @@
 -->
 
   <main>
+
+    <!--Section 'Naming Conventions'-->
     <section id="naming-coventions">
       <h2>Naming Conventions</h2>
       
@@ -43,6 +45,7 @@
       </ul>
     </section>
     
+    <!--Section 'Commit Messages'-->
     <section id="commit-messages">
       <h2>Commit messages</h2>
         <h3>Best practices for commit messages: </h3>
@@ -56,6 +59,8 @@
         
      </section>
     
+
+    <!--Section 'HTML Elements'-->
     <section id="html-elements">
       <h2>HTML Elements</h2>
       
@@ -122,11 +127,37 @@
               </pre>
              </blockquote>
   
-             <img src="images/cute-duck-heart.jpg" alt="a cute yellow duck giving a heart">
+             <img src="/css/images/cute-duck-heart.jpg" alt="a cute yellow duck giving a heart">
     
 
           <h3>Figure (img & figcaption) </h3> 
-      
+            <p>The HTML element <code>&lt;figure></code> is a self-contained content with an option caption, which is specified with the <code>&lt;figcaption></code>>.
+              The figure, its caption, and its contents are referenced as a single unit. The structre for that would look like this:</p>
+              
+              <blockquote>
+                <pre>
+                  <code>
+                    &lt;figure>
+                      &lt;img src="images/cute-duck-heart.jpg" alt="a cute yellow duck giving a heart">
+                      &lt;figcaption>An elephant at sunset&lt;/figcaption>
+                      &lt;/figure>
+                  </code>
+                </pre>
+               </blockquote>
+
+            <p>And it would produce somethng like this:</p>
+              <figure>
+                <img src="/css/images/cute-duck-heart.jpg" alt="A cute yellow duck giving a heart">
+                <figcaption>A cute yellow duck giving a heart</figcaption>
+              </figure>
+
+
+                  <!-- basic configuration for a figure with a figcaption
+                    <figure>
+                      <img src="link.jpg" alt="description">
+                      <figcaption>description</figcaption>
+                    </figure>
+                  -->
 
 
           <h3>Quotes</h3>
@@ -152,13 +183,13 @@
      </section>
   
       
-      
+     <!--Section 'Structuring Content'--> 
     <section id="structuring-content">
         <h2>Structuring Content</h2>
   
             <h3>Header</h3>
-              <p>The header is the introductory content usually at the top of the page and would include a logo or company name and main navigation. Headers are also within sections and articles to introduce the content for headings, subheadings, author, etc.. The tag is:
-  </p> 
+              <p>The header is the introductory content usually at the top of the page and would include a logo or company name and main navigation. 
+                Headers are also within sections and articles to introduce the content for headings, subheadings, author, etc.. The tag is:</p> 
               <p><code> &lt;header> &lt;/header> </code></p>
       
       
@@ -210,7 +241,7 @@
      </section>
                 
        
-  
+    <!--Section 'Linking to elements on page'-->
     <section id="linking-to-element-on-page">
       
       <h2>Linking elements on the same page</h2>
@@ -225,20 +256,20 @@
                         &lt;img src=“http://www.website.com/image/image.jpg” alt=“description” />
                     </code>
                   </pre>
-                  </blockquote>
+                </blockquote>
       
         <h3>Relative paths</h3>
             <p>Links to relative URL/paths means linking to file on the current page. This can be done a variety of ways. </p> 
-            <blockquote>
-                  <pre>
-                    <code>
-                        &lt;a href="about.html">Page in same folder as index.html&lt;/a>
+              <blockquote>
+                    <pre>
+                      <code>
+                          &lt;a href="about.html">Page in same folder as index.html&lt;/a>
 
-                        &lt;img src=“image/image.jpg” alt=“description of image” />
-                        
-                        &lt;link href=“.../css/style.css” rel=“stylesheet” />
-                    </code>
-                  </pre>
+                          &lt;img src=“image/image.jpg” alt=“description of image” />
+                          
+                          &lt;link href=“.../css/style.css” rel=“stylesheet” />
+                      </code>
+                    </pre>
                   </blockquote>
 
         <h3>Elements on same page</h3>
@@ -256,12 +287,14 @@
                             &lt;/section>
                     </code>
                   </pre>
-                  </blockquote>  
+                </blockquote>  
 
         <h3>Parent child relationships</h3>
           <p>When learning HTML, the parent-child relationships of the elements is critical to good structure & code understanding. A <strong>parent</strong> is an element that is directly above and connected to an element in the document tree. An element that is directly contained by another element is said to be the <strong>child</strong> of that element.</p>
     </section>
     
+
+    <!--Section 'Commenting'-->
     <section id="commenting">
       
       <h2>Commenting</h2>
