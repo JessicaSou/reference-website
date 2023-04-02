@@ -1,0 +1,22 @@
+html{
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #b0d9d7;
+    color: #2e2e2e;
+}
+
+h1, h2{ 
+    color: #2e2e2e;
+    font-family: 'Yeseva One', cursive;
+}
+/* 
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+*/
