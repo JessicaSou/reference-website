@@ -11,6 +11,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400&family=Yeseva+One&display=swap" rel="stylesheet">
 </head>
 <body>
+     <!--completely unnecessary but I wanted to test some things and have some fun, sorry!-->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <script>// Get the button:
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
     <a href="index.html"><img src="/css/images/night.png" alt="moon and star logo" class="logo"></a>
     <h1>CSS Properties</h1>
    
@@ -79,16 +101,16 @@
                             <li>font-family</li>
                         </ul>
                     <p><strong>Note:</strong> The font-size and font-family values are required. If one of the other values is missing, their default value are used.</p>
-                    <blockquote>
-                        <pre>
-                            <code>
-                                p.a {
-                                    font: 20px Arial, sans-serif;
-                                  }
+                 <blockquote>
+                    <pre>
+                        <code>
+                            p.a {
+                                font: 20px Arial, sans-serif;
+                              }
                                   
-                                  p.b {
-                                    font: italic small-caps bold 12px/30px Georgia, serif;
-                                  }
+                            p.b {
+                                font: italic small-caps bold 12px/30px Georgia, serif;
+                              }
                             </code>
                         </pre>
                     </blockquote>
@@ -158,21 +180,17 @@
                 <p>We need to do <b>2</b> thing to implement Google fonts onto our webpage;</p>
                 <p>The first is to embed a font, copy the code into the <code>&lt;head></code> of your html:</p>
                 <blockquote>
-                    <pre>
                         <code>
                         &lt;link rel="preconnect" href="https://fonts.googleapis.com">
                         &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
                         &lt;link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
                         </code>
-                    </pre>
                 </blockquote>
                 <p> The second is to link it in a css page:</p>
                 <blockquote>
-                    <pre>
-                        <code>
-                            font-family: 'Raleway', sans-serif;
-                        </code>
-                    </pre>
+                    <code>
+                        font-family: 'Raleway', sans-serif;
+                    </code>
                 </blockquote>
         </section>
 

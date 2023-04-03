@@ -12,6 +12,29 @@
 
 </head>
 <body>
+  <!--completely unnecessary but I wanted to test some things and have some fun, sorry!-->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <script>// Get the button:
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
+
   <header>
     <a href="index.html" ><img src="/css/images/night.png" alt="moon and star logo" class="logo"></a>
 
@@ -81,7 +104,7 @@
                 according to their importance. The tag numbers for from h1-h6, 1 being the most important and 6 being the least. 
                 For HTML you can only have a max of 6 in a section.</p>
             <blockquote>
-              <pre>
+              <div style="white-space: pre">
                 <code>
                 &lt;h1>First&lt;/h1>
                 &lt;h2>Second&lt;/h2>
@@ -90,7 +113,7 @@
                 &lt;h5>Fifth&lt;/h5>
                 &lt;h6>Sixth&lt;/h6>
                 </code>
-              </pre>
+              </div>
             </blockquote>
   
   
@@ -116,11 +139,9 @@
              <!-- The <pre> tag refers to displaying preformatted code to show what it looks like in the code editor. The tag <code> is to display it in the font of what the code was written in -->
             
               <blockquote>
-                <pre>
                   <code>
                       &lt;a href=“”> Link text &lt;/a>
                   </code>
-                </pre>
                </blockquote>
   
              <p>Common Global Attributes Allows us to target any HTML element within our CSS or JavaScript.</p>
@@ -138,11 +159,9 @@
             image and the alternative content. This line is also containted in one set of brackets. The line of code should look like this:</p>
   
             <blockquote>
-              <pre>
                 <code>
-                    &lt;img src=“” alt=“” />
+                    &lt;img src=“” alt=“” >
                 </code>
-              </pre>
              </blockquote>
   
              <img src="/css/images/cute-duck-heart.jpg" alt="a cute yellow duck giving a heart">
@@ -152,16 +171,16 @@
             <p>The HTML element <code>&lt;figure></code> is a self-contained content with an option caption, which is specified with the <code>&lt;figcaption></code>>.
               The figure, its caption, and its contents are referenced as a single unit. The structre for that would look like this:</p>
               
-              <blockquote>
-                <pre>
-                  <code>
-                    &lt;figure>
-                      &lt;img src="images/cute-duck-heart.jpg" alt="a cute yellow duck giving a heart">
-                      &lt;figcaption>An elephant at sunset&lt;/figcaption>
-                      &lt;/figure>
-                  </code>
-                </pre>
-               </blockquote>
+            <blockquote>
+              <div style="white-space: pre">
+                <code>
+                  &lt;figure>
+                  &lt;img src="images/cute-duck-heart.jpg" alt="a cute yellow duck giving a heart">
+                  &lt;figcaption>An elephant at sunset&lt;/figcaption>
+                  &lt;/figure>
+                </code>
+              </div>
+            </blockquote>
 
             <p>And it would produce somethng like this:</p>
               <figure>
@@ -183,7 +202,7 @@
             <p>There are a couple of ways to do quotes in HTML, here are the tags and their explinations: </p>
               <dl>
                 <dt> <code>&lt;q></code>:</dt> <dd> Used to mark up quotes embedded in other elements like a paragraph. <q>Example</q></dd>
-                <dt> <code>&lt;blockquote></code>:</dt> <dd>For large stand alone quotes. <blockquote> Example</blockquote></dd>
+                <dt> <code>&lt;blockquote></code>:</dt> <dd>For large stand alone quotes. <blockquote> Lorem ipsum dolor sit amet, consectetur adipiscing elit, ed do eiusmod tempor incididunt ut labore et dolore magna aliqua.e</blockquote></dd>
                 <dt> <code>&lt;cite></code>:</dt> <dd> Marking the source of the quote. <cite>Example</cite></dd> 
               </dl>
     
@@ -289,14 +308,14 @@
         <h3>Absoulte URLs</h3>
           <p>Absolute URLs offer a full address for a website or other resource on the Internet. This means referencing a whole link with a domain name. Below are examples of absolute URLs</p>
             <blockquote>
-                  <pre>
-                    <code>
-                        &lt;a href="http://www.website.com">This link goes to another url&lt;/a>
+              <div style="white-space: pre">
+                <code>
+                    &lt;a href="http://www.website.com">This link goes to another url&lt;/a>
                        
-                        &lt;img src=“http://www.website.com/image/image.jpg” alt=“description” />
-                    </code>
-                  </pre>
-                </blockquote>
+                    &lt;img src=“http://www.website.com/image/image.jpg” alt=“description” />
+                  </code>
+                </div>
+              </blockquote>
       
         <h3>Relative paths</h3>
             <p>Links to relative URL/paths means linking to file on the current page. This can be done a variety of ways. </p> 
@@ -380,7 +399,7 @@
     
     <section id="skip-links">
       <h2>Skip Links</h2>
-        <p>Skip links are placed at the top of your page and offer users s way to jump to specific areas of the page. 
+        <p>Skip links are placed at the top of your page and offer users a way to jump to specific areas of the page. 
           A common place they are used is in navigations.
         </p>
         <p>
