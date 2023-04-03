@@ -82,6 +82,20 @@ nav a:hover{
     border: 2px solid rgb(116, 117, 207);
 }
 
+footer{
+    margin: 0 auto;
+    background-color: #7773ed;
+}
+
+.footer,
+a:link,
+a:visited,
+a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color:antiquewhite;
+    text-align: center;
+}
 
 /* 
 h2{
