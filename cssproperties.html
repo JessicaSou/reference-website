@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties</title>
+    <link rel ="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400&family=Yeseva+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="index.html"><img src="/css/images/night.png" alt="moon and star logo" class="logo"></a>
+    <h1>CSS Properties</h1>
+   
+    <p class="explination">Cascading Style Sheets (CSS) is the
+        language we use to control the
+        appearance of our HTML pages.
+    </p>
+
+    <nav id="nav" role="navigation">
+      <ul>
+        <li><a href="#font-properties">Font Properties</a></li>
+        <li><a href="#text-decorations">Text Decoration</a></li>
+        <li><a href="#different-state-of-links">Different states for links</a></li>
+        <li><a href="#adding-google-font">Adding a Google font</a></li>
+        <li><a href="#margin">Margins</a></li>
+        <li><a href="#padding">Padding</a></li>
+        <li><a href="#margin-padding-shorthand">Shorthand</a></li>
+      </ul>
+    </nav>
+  </header>
+    
+    <main>
+        <section id="font-properties" class="font-properties">
+            <h2>Font Properties</h2>
+
+            <article>
+                <h3>Font-family</h3>
+                    <p>The font-family CSS property specifies a prioritized list of one or more font family names and/or generic family names for the selected element.</p>
+                    <p class="example"><code>font-family: Georgia, serif;</code></p>
+            </article>
+
+            <article>
+                <h3>Font-size</h3>
+                    <p>For adjusting the size of the font: a single number with a unit (rem [the best choice], em, px)</p>
+                    <p class="example">Ex: 2rem, 1.125em, 24px</p>
+            </article>
+            
+            <article>
+                <h3>Font-weight</h3>
+                    <p>Sets how thick or thin characters in text should be displayed</p>
+                    <p class="example">Ex: bold, normal, 700</p>
+            </article>
+            
+            <article>
+                <h3>Font-style</h3>
+                    <p>Specifies font style for text</p>
+                    <p class="example">Ex: italic or normal</p>
+            </article>
+            
+            <article>
+                <h3>Line-height</h3>
+                    <p>For adjusting the line-height: a single number, a multiplier that multiplies the font-size</p>
+                    <p class="example">Ex: 1.5</p>
+            </article>
+            
+            <article>
+                <h3>Font shorthand</h3>
+                    <p>To shorten the code, it is also possible to specify all the individual font properties in one property.</p>
+
+                    <p>The font property is a shorthand property for:</p>
+                        <ul>
+                            <li>font-style</li>
+                            <li>font-variant</li>
+                            <li>font-weight</li>
+                            <li>font-size/line-height</li>
+                            <li>font-family</li>
+                        </ul>
+                    <p><strong>Note:</strong> The font-size and font-family values are required. If one of the other values is missing, their default value are used.</p>
+                    <blockquote>
+                        <pre>
+                            <code>
+                                p.a {
+                                    font: 20px Arial, sans-serif;
+                                  }
+                                  
+                                  p.b {
+                                    font: italic small-caps bold 12px/30px Georgia, serif;
+                                  }
+                            </code>
+                        </pre>
+                    </blockquote>
+            </article>
+
+        </section>
+
+        <section id="text-decorations" class="text-decorations">
+            <h2>Text Decorations</h2>
+
+            <article>
+                <h3>text-transform</h3>
+                    <p>Change capitalization such as uppercase, lowercase, capitalize. 
+                        It’s a good idea to use CSS to make all caps instead of writing it directly in HTML for accessibility reasons.</p>
+                    <p class="example">Ex: uppercase, lowercase, capitalize</p>
+            </article>
+
+            <article>
+                <h3>text-decoration</h3>
+                    <p>Specifies the decoration added to text. The only things in a website that should be underlined are links.</p>
+                    <p class="example">Ex: none, underline, line-through, overline</p>
+            </article>
+            
+            <article>
+                <h3>text-align</h3>
+                    <p>Specifies the horizontal alignment of text in an element</p>
+                    <p class="example">Ex: left, center (American spelling), right, justify</p>
+            </article>
+            
+            <article>
+                <h3>text-indent</h3>
+                    <p>Indent the first line of text like traditionally printed materials</p>
+                    <p class="example">Ex: 1rem, 2em, 20px, 25%</p>
+            </article>
+            
+            <article>
+                <h3>text-shadow</h3>
+                    <p>Adding a shadow to the text. Specified like this: text-shadow: horizontal-offset vertical-offset blur-radius colour</p>
+                    <p class="example"><code>text-shadow: 2px 2px #ff0000;</code></p>
+
+            </article>
+        </section>
+
+        <section id="different-state-of-links">
+            <h2>Diffferent State of Links</h2>
+            <p>Styling links in websites is not really different from other elements, but they must be styled directly, and don’t inherit 
+                certain properties from their parent elements.</p>
+
+                Links have a bunch of states that we can also style when a user interacts.
+                <dl>
+                    <dt> <code>:link</code>:</dt> <dd>For styling the default link state</dd>
+                    <dt> <code>:visited</code>:</dt> <dd>For styling the link after it’s been visited by the user<dd>
+                    <dt> <code>:hover</code>:</dt> <dd> For styling the link when the mouse is sitting over it </dd> 
+                    <dt> <code>:focus</code>:</dt> <dd>For styling the link when the keyboard has tab-focused it </dd> 
+                    <dt> <code>:active</code>:</dt> <dd>For styling the link when the mouse button is pressed down on it</dd>
+                  </dl>
+                <p>It’s important that these link states go in this direction: link, visited, hover, focus, active. 
+                There’s a fun a mnemonic to remember the order: “Lord Vader’s Handle Formerly Anakin”.</p>
+
+        </section>
+
+        <section id="adding-google-font">
+            <h2>Adding a Google Font</h2>
+                <p>Beyond the core web fonts for font family we can use custom typefaces that get downloaded to our computers and used to display the website.
+                    The fonts must be properly licensed for the web—the ones installed currently on your computer are not. 
+                    There are lots of different services for Web Fonts—Google Fonts is a simple one to start with and uses open fonts that are licensed for any situation.</p>
+                <p>We need to do <b>2</b> thing to implement Google fonts onto our webpage;</p>
+                <p>The first is to embed a font, copy the code into the <code>&lt;head></code> of your html:</p>
+                <blockquote>
+                    <pre>
+                        <code>
+                        &lt;link rel="preconnect" href="https://fonts.googleapis.com">
+                        &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                        &lt;link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+                        </code>
+                    </pre>
+                </blockquote>
+                <p> The second is to link it in a css page:</p>
+                <blockquote>
+                    <pre>
+                        <code>
+                            font-family: 'Raleway', sans-serif;
+                        </code>
+                    </pre>
+                </blockquote>
+        </section>
+
+        <section id="margin">
+            <h2>Margin</h2>
+                <p>The margin is an invisible
+                    space around your box.
+                    It adds spacing outside of
+                    the box, pushing other
+                    boxes away from the box.
+                    Margins can have positive
+                    or negative values.
+                </p>
+                <blockquote>
+                    <pre>
+                        <code>
+                            .box {
+                                margin-top: -10px;
+                                margin-right: 30px;
+                                margin-bottom: 40px;
+                                margin-left: 4em;
+                                }
+                        </code>
+                    </pre>
+                </blockquote>
+                <p>Margins have weird
+                    behavior when it comes to
+                    their top and bottom
+                    values.
+                    The bottom value of one
+                    box can collapse into the
+                    top value of the next-the
+                    browser choosing only the
+                    highest of the two.
+                    The distance between these
+                    boxes will not be 40px.
+                    Instead the browser will
+                    pick the bigger of the two
+                    and choose it. So the
+                    margin between these boxes
+                    is 25px.</p>
+                 <blockquote>
+                    <pre>
+                        <code>
+                            .box-1 {
+                                margin-bottom: 15px;
+                                }
+                                .box-2 {
+                                margin-top: 25px;
+                                }
+                        </code>
+                    </pre>
+                </blockquote>   
+        </section>
+
+        <section id="padding">
+            <h2>Padding</h2>
+                <p>Padding adds spacing
+                    inside the box, pushing
+                    the content away from the
+                    border.
+                    The background color is
+                    visible with the padding.
+                </p>
+                <blockquote>
+                    <pre>
+                        <code>
+                            .box {
+                                padding-top: 0;
+                                padding-right: 30px;
+                                padding-bottom: 40px;
+                                padding-left: 4em;
+                                }
+                        </code>
+                    </pre>
+                </blockquote>
+        </section>
+
+        <section id="margin-padding-shorthand">
+            <h2>Margin and Padding Shorthand</h2>
+                <p>We can specify margin and
+                    padding with their
+                    individual property, but
+                    it’s often easier to use
+                    the shorthand version.
+                    Start at the top and make
+                    our way clockwise around
+                    the box.
+                </p>
+                <blockquote>
+                    <pre>
+                        <code>
+                            .box {
+                                /* padding: top right bottom left */
+                                padding: 0 30px 40px 4em;
+
+                                /* margin: top right bottom left */
+                                margin: -10px 30px 40px 4em;
+                                }
+                        </code>
+                    </pre>
+                </blockquote>
+                <p>If you leave off numbers
+                    from the list, the browser
+                    will match the opposing
+                    sides value for any missing
+                    numbers.</p>
+                    <p>3 numbers: top, left/right, bottom</p>
+                    <p>2 numbers: top/bottom & left/right</p>
+                    <p>1 number: specifies a margin or padding on all 4 sides.</p>
+                <blockquote>
+                    <pre>
+                        <code>
+                            .box {
+                                /* padding: top, left/right, bottom */
+                                padding: 10px 12px 8px;
+
+                                /* padding: top/bottom & left/right */
+                                padding: 10px 12px;
+
+                                /* padding: top & right & bottom & left */
+                                padding: 10px;
+                                }
+                        </code>
+                    </pre>
+                </blockquote>
+        </section>
+
+    </main>
+
+</body>
+</html>

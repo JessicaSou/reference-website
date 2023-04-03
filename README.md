@@ -27,11 +27,11 @@ Linking to an element on the same page(done)
 
 Comments(done)
 
-Landmark roles
+Landmark roles(done)
 
-Aria-label
+Aria-label(done)
 
-Skip links
+Skip links (done)
 
 Font properties:
     font-family

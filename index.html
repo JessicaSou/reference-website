@@ -13,8 +13,11 @@
 </head>
 <body>
   <header>
+    <a href="index.html" ><img src="/css/images/night.png" alt="moon and star logo" class="logo"></a>
+
     <h1>Reference Website</h1>
-    <nav>
+    <p class="explination">A collection of info learned in Web Design 1 that is hopefully correct.</p>
+    <nav id="nav" role="navigation">
       <ul>
         <li><a href="#naming-coventions">Naming Conventions</a></li>
         <li><a href="#commit-messages">Commit messages</a></li>
@@ -22,7 +25,10 @@
         <li><a href="#structuring-content">Structuring Content</a></li>
         <li><a href="#linking-to-element-on-page">Linking elements on the same page</a></li>
         <li><a href="#commenting">Commenting</a></li>
-      </ul>
+        <li><a href="#landmark-roles">Landmark Roles</a></li>
+        <li><a href="#aria-label">Aria Label</a></li>
+        <li><a href="#skip-links">Skip Links</a></li>
+        <li><a href="cssproperties.html">CSS Properties</a></li>
     </nav>
   </header>  
 
@@ -72,20 +78,27 @@
           <h3>Headings</h3>
           <!-- explain headings -->
             <p> The heading tags are used to mark headings
-      according to their importance. The tag numbers for from h1-h6, 1 being the most important and 6 being the least. For HTML you can only have a max of 6 in a section. Below is a visual representation of h1-h6. </p>
-            <h1>First</h1>
-            <h2>Second</h2>
-            <h3>Thrid</h3>
-            <h4>Fourth</h4>
-            <h5>Fifth</h5>
-            <h6>Sixth</h6>
+                according to their importance. The tag numbers for from h1-h6, 1 being the most important and 6 being the least. 
+                For HTML you can only have a max of 6 in a section.</p>
+            <blockquote>
+              <pre>
+                <code>
+                &lt;h1>First&lt;/h1>
+                &lt;h2>Second&lt;/h2>
+                &lt;h3>Thrid&lt;/h3>
+                &lt;h4>Fourth&lt;/h4>
+                &lt;h5>Fifth&lt;/h5>
+                &lt;h6>Sixth&lt;/h6>
+                </code>
+              </pre>
+            </blockquote>
   
   
           <h3>Paragraphs</h3>
             <p>Paragraphs or basic text blocks are denoted by the tag <code> &lt;p&gt;</code>. It is a
-      block-level element and always starts on a
-      new line. Before and after each paragraph,
-      browsers add margins automatically.
+              block-level element and always starts on a
+              new line. Before and after each paragraph,
+              browsers add margins automatically.
             </p>
   
   
@@ -183,7 +196,7 @@
                 <dt> <code>&lt;i></code>:</dt> <dd> Another language, technical term, title. Visual only italics. <i>Example</i></dd> 
                 <dt> <code>&lt;b></code>:</dt> <dd> A keyword <b>Example</b></dd> 
                 <dt> <code>&lt;small></code>:</dt> <dd> Used to set small font size. It decreases the font size by one size. <small>Example</small></dd>
-                </dl>
+              </dl>
   
      </section>
   
@@ -194,7 +207,10 @@
   
             <h3>Header</h3>
               <p>The header is the introductory content usually at the top of the page and would include a logo or company name and main navigation. 
-                Headers are also within sections and articles to introduce the content for headings, subheadings, author, etc.. The tag is:</p> 
+                Headers are also within sections and articles to introduce the content for headings, subheadings, author, etc..</p> 
+                <p>
+                  The tag is:
+                </p>
               <p><code> &lt;header> &lt;/header> </code></p>
       
       
@@ -203,7 +219,10 @@
                   footer at the bottom. This often includes
                   lists of links, copyright information,
                   extra information about the company,
-                  terms and services. The tag is:
+                  terms and services.
+                </p>
+                <p>
+                  The tag is:
                 </p>
                 <p><code> &lt;footer> &lt;/footer> </code></p>
       
@@ -214,6 +233,9 @@
                   per page and it tells the browser that
                   this is where the main content is.
                   </p>
+                  <p>
+                    The tag is:
+                  </p>
                   <p><code> &lt;main> &lt;/main> </code></p>
       
             
@@ -221,27 +243,40 @@
                 <p>Section is used to wrap around related
                     pieces of content. Usually each section
                     has its own heading.
-  
+                  </p>
+                  <p>
+                    The tag is:
                   </p>
                   <p><code> &lt;section> &lt;/section> </code></p>
       
       
                <h3> Article </h3>
-                <p>The article element represents a self-contained composition in a web page, which is intended to be independently distributable or reusable. Examples include blog post, product card, interactive widget, etc... The tag is :
-                  </p>
-                  <p><code> &lt;article> &lt;/article> </code></p>
-      
+                <p>The article element represents a self-contained composition in a web page, which is intended to be independently distributable or reusable. 
+                  Examples include blog post, product card, interactive widget, etc... 
+                </p>
+                <p>
+                  The tag is:
+                </p>
+                <p><code> &lt;article> &lt;/article> </code></p>
+
       
                <h3> Nav </h3>
-                <p>The nav element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. The tag is :
+                <p>The nav element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. 
+                  </p>
+                  <p>
+                    The tag is:
                   </p>
                   <p><code> &lt;nav> &lt;/nav> </code></p>
       
       
                 <h3> Aside </h3>
-                  <p>The aside element represents a portion of a document whose content is only indirectly related to the document's main content. This content will frequently be presented as a sidebar on a website. The tag is :
-                    </p>
-                    <p><code> &lt;Aside> &lt;/Aside> </code></p>
+                  <p>The aside element represents a portion of a document whose content is only indirectly related to the document's main content. 
+                    This content will frequently be presented as a sidebar on a website.
+                  </p>
+                  <p>
+                    The tag is:
+                  </p>
+                  <p><code> &lt;Aside> &lt;/Aside> </code></p>
       
      </section>
                 
@@ -309,8 +344,66 @@
           </code>
           
       </section>
-            
+
+    
+    <section id="landmark-roles">
+      <h2>Landmark Roles</h2>
+        <p>Part of the accesible side of HTML, 
+          ARIA has a set of landmark roles
+          to help those using screen readers
+          to jump directly to specific
+          sections within our sites.</p>
+          <p> Some of these roles are:</p>
+          <dl>
+            <dt><code> &lt;header role=“banner”&gt;</code>:</dt> <dd>This role is for defining an element as the masthead, added to the primary header.</dd>
+            <dt><code> &lt;nav role=“navigation”&gt;</code>:</dt> <dd>This role is for defining an element as the primary navigation, added the the top nav.</dd>
+            <dt><code> &lt;main role=“main”&gt;</code>:</dt> <dd> This role is for defining an element as being the main content of the page, added to the main.</dd>
+            <dt><code> &lt;aside role=“complimentary”&gt;</code>:</dt> <dd> This role is for defining an element as being content related to the primary content,  usually added to an aside.</dd>
+            <dt><code> &lt;footer role=“contentinfo”&gt;</code>:</dt> <dd>This role is for defining an element as information about the content: e.g. copyright, terms, privacy policy, usually added to a footer.</dd>
+          </dl>
+    </section>
+
+    <section id="aria-label">
+      <h2>Aria Label</h2>
+        <p>Aria-label is an attribute defined in the Web Accessibility Initiative
+          (WAI) which has a specification called Accessible Rich Internet Application (ARIA) specification.
+          The aria-label attribute provides a way to place a descriptive text label on an object, such as a link, 
+          when there are no elements visible on the page that describe the object.</p>
+        <p>An example of this can be seen when adding a "Click to read more" button and when someone focuses on that link with web reader they can gain more information 
+          with an aria-label. This would typically sit in a pre-existing line of code. 
+          The code for an aria-label is:
+        </p>
+        <blockquote>
+          <code>&lt;aria-label="write something describing what this will actually do because whatever is here can be read"></code>
+        </blockquote>
+    </section>
+    
+    <section id="skip-links">
+      <h2>Skip Links</h2>
+        <p>Skip links are placed at the top of your page and offer users s way to jump to specific areas of the page. 
+          A common place they are used is in navigations.
+        </p>
+        <p>
+          They typically follow this format:
+        </p>
+        <blockquote>
+          <pre>
+            <code>
+              &lt;ul>
+              &lt;li> &lt;a href="nav"></a> &lt;/li>
+              &lt;li> &lt;a href="main"></a> &lt;/li>
+              &lt;/ul>
+
+              &lt;nav role="navigation" id="nav"> &lt;/nav>
+
+              &lt;main role="main" id="main"> &lt;/main>
+            </code>
+          </pre>  
+        </blockquote>
+    </section>
                 
+
+
   </main>
     
   

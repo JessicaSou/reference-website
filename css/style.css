@@ -1,16 +1,88 @@
 html{
+    box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+    background-color: #aad0e6;
+    color: #2e2e2e;
+    line-height: 1.4;
+    font-size: 110%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    } 
+
+.logo{
+    width: 10%;
 }
 
 body {
-    background-color: #b0d9d7;
-    color: #2e2e2e;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 1em 2em 1em 2em;
+}
+
+code{
+    font-weight: bold;
+    color: rgb(35, 37, 137);
+    padding: .5em;
 }
 
 h1, h2{ 
     color: #2e2e2e;
     font-family: 'Yeseva One', cursive;
 }
+
+h2{
+    background: linear-gradient(to left, #e5ccac, #7773ed 100%);
+    background-position: 0 100%;
+    background-size: 100% 2px;
+    background-repeat: repeat-x;
+}
+
+blockquote{
+    background-color: rgb(244, 239, 233);
+    width: 50%;
+    border-radius: 8px;
+    padding: 1em;
+}
+
+.explination, .example{
+    font-weight: bold;
+}
+
+nav ul{
+    list-style: none;
+    display: block;
+    padding: 0;
+}
+
+nav li{
+    display: inline;
+}
+
+nav a{
+    display: inline-block;
+    padding: .5em .75em .5em .75em;
+    border-radius: 8px;
+}
+
+nav a,
+nav a:visited{
+    background-color: rgb(116, 117, 207);
+    color: rgb(244, 239, 233);
+    border: 2px solid rgb(244, 239, 233);
+    text-decoration: none;
+}
+
+nav a:focus,
+nav a:hover{
+    background-color:rgb(244, 239, 233  );
+    color:rgb(21, 50, 126);
+    border: 2px solid rgb(116, 117, 207);
+}
+
+
 /* 
 h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
