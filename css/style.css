@@ -66,6 +66,11 @@ h2{
     background-repeat: repeat-x;
 }
 
+h3{
+    text-shadow:1px 1px 1px #f9efdb;
+}
+
+
 blockquote{
     background-color: rgb(244, 239, 233);
     margin:1em 0 1em 0;
